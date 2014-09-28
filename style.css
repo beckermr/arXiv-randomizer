@@ -1,0 +1,32 @@
+/* adjust bootstrap defaults*/
+body {
+  font-weight: 300;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+p.lead {
+  margin-bottom: 0px;
+}
+
+.authors {
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.abs {
+  margin-bottom: 14px;
+}
+
+.timestamp {
+  margin-top: -10px;
+  margin-bottom: 7px;
+}
+
+/* further hack css for small screens*/
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+  .abs {
+    display: none;
+  }
+}
+
