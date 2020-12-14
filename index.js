@@ -100,7 +100,7 @@ function htmlDecode (input) {
   return e.childNodes.length === 0 ? '' : e.childNodes[0].nodeValue
 }
 
-const feedURL = 'https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fexport.arxiv.org%2Frss%2Fastro-ph&api_key=io4ysvap45khsblw1vpswkdz0fym8wusye2gumeg'
+const feedURL = 'https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fexport.arxiv.org%2Frss%2Fastro-ph&api_key=io4ysvap45khsblw1vpswkdz0fym8wusye2gumeg&count=100'
 
 function loadArXivJSON () {
   var xobj = new XMLHttpRequest()

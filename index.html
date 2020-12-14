@@ -40,33 +40,32 @@
 
     <!-- - Le javascript ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- <script type="text/javascript" src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
 
     <script type="text/javascript">
       $(document).ready(function() {
        $('.title').click(function() {
-	 if($(window).width() <= 768) {
-	   var $tgt = $(this).parent().nextAll('.abs:first');
-	   $tgt.slideToggle(200);
-	 }
+         if($(window).width() <= 768) {
+           var $tgt = $(this).parent().nextAll('.abs:first');
+           $tgt.slideToggle(200);
+         }
        });
 
        var $w = $(window).width();
        $(window).resize(function() {
-	 if ($(window).width() > 768) {
-	   $('.abs').show();
-	 } else {
-	   if($w > 768) {
-	     $('.abs').hide();
-	   }
-	 }
+         if ($(window).width() > 768) {
+           $('.abs').show();
+         } else {
+           if($w > 768) {
+             $('.abs').hide();
+           }
+         }
 
-	 $w = $(window).width();
+         $w = $(window).width();
        });
       });
     </script>
-
   </body>
 </html>
